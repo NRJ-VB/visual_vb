@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cases.Designer.vb">
+      <DependentUpon>Cases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cases.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Color Changer.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,10 @@
       <DependentUpon>Color Changer.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EventHandler.Designer.vb">
+      <DependentUpon>EventHandler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventHandler.vb" />
     <Compile Include="Item Adder.Designer.vb">
       <DependentUpon>Item Adder.vb</DependentUpon>
     </Compile>
@@ -102,8 +112,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cases.resx">
+      <DependentUpon>Cases.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Color Changer.resx">
       <DependentUpon>Color Changer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventHandler.resx">
+      <DependentUpon>EventHandler.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item Adder.resx">
       <DependentUpon>Item Adder.vb</DependentUpon>
