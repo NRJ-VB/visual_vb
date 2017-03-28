@@ -13,6 +13,21 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +60,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -89,10 +107,22 @@
       <DependentUpon>EventHandler.vb</DependentUpon>
     </Compile>
     <Compile Include="EventHandler.vb" />
+    <Compile Include="Functions.Designer.vb">
+      <DependentUpon>Functions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Item Adder.Designer.vb">
       <DependentUpon>Item Adder.vb</DependentUpon>
     </Compile>
     <Compile Include="Item Adder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListCheckBox.Designer.vb">
+      <DependentUpon>ListCheckBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListCheckBox.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MsgBoxStyles.Designer.vb">
@@ -116,6 +146,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Signup.Designer.vb">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.vb" />
     <Compile Include="Validation.Designer.vb">
       <DependentUpon>Validation.vb</DependentUpon>
     </Compile>
@@ -137,8 +171,14 @@
     <EmbeddedResource Include="EventHandler.resx">
       <DependentUpon>EventHandler.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Functions.resx">
+      <DependentUpon>Functions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Item Adder.resx">
       <DependentUpon>Item Adder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListCheckBox.resx">
+      <DependentUpon>ListCheckBox.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MsgBoxStyles.resx">
       <DependentUpon>MsgBoxStyles.vb</DependentUpon>
@@ -149,6 +189,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Validation.resx">
       <DependentUpon>Validation.vb</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +200,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -167,6 +213,30 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

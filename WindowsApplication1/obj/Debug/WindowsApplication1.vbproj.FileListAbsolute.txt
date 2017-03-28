@@ -26,3 +26,8 @@ C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\Windows
 C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.voter.resources
 C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.MsgBoxStyles.resources
 C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Validation.resources
+C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.ListCheckBox.resources
+C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Functions.resources
+C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.signup.resources
+C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Database1.mdf
+C:\Users\thaku\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Database1_log.ldf
